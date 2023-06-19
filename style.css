@@ -1,0 +1,1069 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lato&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Flex&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    width: 5px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 10px;
+    background-color: rgb(122, 122, 122);
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    line-height: 5rem;
+    background: black;
+    color: white;
+    position: fixed;
+    z-index: 99;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    position: fixed;
+    background: black;
+    top: 0;
+}
+
+nav h2 {
+    line-height: 7rem;
+    font-size: 31px;
+    font-family: 'Geologica', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 7rem;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 1.5rem;
+    font-size: 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+nav button a {
+    text-decoration: none;
+    color: black;
+}
+
+nav button a:hover {
+    color: white;
+}
+
+#hamburger {
+    display: none;
+    width: 4rem;
+}
+
+nav button {
+    margin: 2rem 0rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    padding: 15px;
+}
+
+nav button:hover {
+    cursor: pointer;
+    background-color: rgb(15, 211, 15);
+    color: white;
+    transition-delay: 0.4s;
+    padding: 15px;
+}
+
+nav button:active {
+    color: black;
+    box-shadow: 4px 1px rgb(151, 224, 40);
+}
+
+.remove {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+#shopping-cart {
+    position: relative;
+    top: 1rem;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.cart-item {
+    display: none;
+    position: fixed;
+    right: 1rem;
+    top: 8rem;
+    height: 18rem;
+    width: 20rem;
+    z-index: 100;
+    color: white;
+    background-color: black;
+}
+
+.cart-item h3 {
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+}
+
+.cart-item p {
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+}
+
+.remove-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.cart-list {
+    position: relative;
+    height: 5rem;
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+}
+
+.cart-list span {
+    position: absolute;
+    left: 13rem;
+    bottom: 3rem;
+}
+
+.cart-list h4 {
+    position: relative;
+    top: 2rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.card-list span i {
+    margin: 0px 5px;
+}
+
+.cart-list-products button {
+    padding: 5px;
+    position: relative;
+    left: 17.5rem;
+    top: -3rem;
+    border-radius: 50px;
+}
+
+.cart-list p {
+    position: relative;
+    margin: 1rem 4rem;
+}
+
+/* .cart-list-products ul {} */
+.cart-products hr {
+    position: relative;
+    bottom: 20px;
+}
+
+.show {
+    display: block;
+}
+
+#item1 {
+    display: none;
+}
+
+#item2 {
+    display: none;
+}
+
+#item3 {
+    display: none;
+}
+
+.cart-list-products p {
+    position: relative;
+    left: 10rem;
+    top: -0.5rem;
+}
+
+#no-cart-item {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    top: 1.5rem;
+    left: 1rem;
+    font-size: 18px;
+}
+
+.banner {
+    position: relative;
+    top: 6rem;
+    height: 85vh;
+    background-color: rgb(225 204 196);
+}
+
+#banner-img {
+    position: relative;
+    left: 44rem;
+    top: 4rem;
+    height: 25rem;
+}
+
+#para {
+    width: 50%;
+    position: relative;
+    left: 10rem;
+    padding-left: 15px;
+    margin: 20px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.bg-circle {
+    position: absolute;
+    right: 12rem;
+    top: 10rem;
+    height: 15rem;
+    width: 20rem;
+    border-radius: 80px;
+    background-color: orange;
+}
+
+.banner section {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+
+#watch-banner {
+    position: relative;
+    right: 1rem;
+}
+
+.banner #banner-para {
+    position: relative;
+    left: 0;
+    margin: 20px 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.banner section h2 {
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.banner section p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.banner section p:nth-child(1) {
+    position: relative;
+    right: 11rem;
+}
+
+.banner section #shop-now {
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.banner section #shop-now:hover {
+    color: white;
+    background: rgb(15, 211, 15);
+    border: none;
+}
+
+.product-demo {
+    position: relative;
+    height: 50vh;
+    top: 7rem;
+}
+
+.product-demo section {
+    position: absolute;
+    right: 12rem;
+    top: 5rem;
+}
+
+.product-demo section h2 {
+    color: rgb(238, 191, 131);
+    font-size: 35px;
+    margin: 10px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.product-demo section h1 {
+    font-size: 42px;
+    margin: 10px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.product-demo section p {
+    font-size: 18px;
+}
+
+.product-demo section ul li {
+    list-style: none;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.product-demo section ul li i {
+    font-size: 30px;
+    margin: 0px 10px;
+}
+
+.product-demo section ul#feature1 {
+    position: relative;
+    top: 2rem;
+    width: 200px;
+    left: 1rem;
+}
+
+.product-demo section ul#feature2 {
+    position: relative;
+    bottom: 3.5rem;
+    left: 15rem;
+    width: 200px;
+}
+
+.product-demo button#read-more {
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-demo button#read-more:hover {
+    background: rgb(15, 211, 15);
+    color: white;
+    border: none;
+}
+
+#apple-watch {
+    position: relative;
+    top: 4rem;
+    left: 4rem;
+    height: 25rem;
+    transform: rotate(-30deg);
+}
+
+
+.product-demo button {
+    position: relative;
+    left: 2rem;
+    bottom: 2rem;
+    padding: 10px;
+}
+
+.features {
+    position: relative;
+    top: 25rem;
+    height: 10rem;
+    background-color: #f6f3ea;
+}
+
+.features h4 {
+    position: relative;
+    top: 4rem;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+}
+
+.features h2 {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: 10rem;
+    text-align: center;
+    font-size: 45px;
+}
+
+.features p {
+    position: relative;
+    top: 12rem;
+    padding: 0px 15rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.core-features {
+    display: grid;
+    grid: 15rem / 25rem 25rem 25rem;
+    grid-gap: 10px;
+    top: 15rem;
+    position: relative;
+    padding: 5rem 4rem;
+    background: #f6f3ea;
+    font-family: 'Inter', sans-serif;
+}
+
+.core-features p {
+    position: relative;
+    top: 0;
+    padding: 25px 0;
+}
+
+.item h3 i {
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+.customer {
+    position: relative;
+    top: 75rem;
+    height: 50vh;
+}
+
+.customer p {
+    text-align: center;
+}
+
+.customer h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.customer h2 {
+    font-size: 1.9rem;
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+#testimonials {
+    display: flex;
+    width: 100vw;
+    gap: 5px;
+    margin: 0px 2rem 0 0;
+}
+
+#testimonials .box {
+    border: 1px solid;
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+    width: fit-content;
+    height: 90vh;
+    width: 22rem;
+    padding: 1rem;
+}
+
+.box span {
+    position: relative;
+    top: 5rem;
+    left: 6rem
+}
+
+.box span i {
+    font-size: 20px;
+    color: grey;
+    border: 1px;
+}
+
+.box span i:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
+.box img {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    top: 8rem;
+    left: 2rem;
+    border-radius: 10rem;
+}
+
+.box .name {
+    position: relative;
+    top: 9rem;
+}
+
+.box .name #author {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+
+}
+
+.box .name #role {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.FAQ {
+    height: 110vh;
+    background-color: whitesmoke;
+    position: relative;
+    top: 2rem;
+    padding: 35px 0;
+}
+
+.FAQ p {
+    text-align: center;
+    position: relative;
+    top: 2rem;
+    font-size: 1.2em;
+}
+
+.FAQ h2 {
+    position: relative;
+    top: 2rem;
+}
+
+#left {
+    display: flex;
+    margin: 4rem 0;
+}
+
+#left h2 {
+    position: relative;
+    left: 5rem;
+}
+
+#left .faq-desc {
+    position: relative;
+    color: cyan;
+    top: 6rem;
+    right: 17rem;
+}
+
+#first-left {
+    color: black;
+    position: relative;
+    top: 6rem;
+    right: 17rem;
+}
+
+#second-left {
+    color: black;
+    position: relative;
+    top: 6rem;
+    right: 20.5rem;
+}
+
+#third-left {
+    color: black;
+    position: relative;
+    top: 6rem;
+    right: 29rem;
+}
+
+section#right {
+    position: relative;
+    bottom: 24rem;
+    left: 15rem;
+    margin: 4rem 0;
+}
+
+section#right h2#second-head {
+    position: relative;
+    right: 1rem;
+}
+
+section#right h2#third-head {
+    position: relative;
+    left: 1rem;
+}
+
+section#right p {
+    position: relative;
+    left: 6rem;
+}
+
+.newsletter {
+    position: relative;
+    top: 0rem;
+    bottom: 0;
+    height: 50vh;
+    background-color: grey;
+    color: white;
+}
+
+.newsletter p {
+    position: relative;
+    top: 2rem;
+    font-size: 1.5em;
+}
+
+.newsletter h2 {
+    position: relative;
+    padding: 10px;
+    top: 2rem;
+}
+
+#news-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+.input-box {
+    position: relative;
+    top: 4rem;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+}
+
+.products {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.products h2 {
+    position: relative;
+    top: 3rem;
+    text-align: center;
+}
+
+.products .card {
+    top: 8rem;
+    position: relative;
+    height: 28rem;
+    width: 22rem;
+    right: 7rem;
+    border: 1px solid;
+}
+
+.products .card h3 {
+    font-size: 20px;
+}
+
+.products .card img {
+    height: 20rem;
+    margin-left: 4rem;
+}
+
+.card button {
+    position: relative;
+    top: 1rem;
+    left: 5rem;
+    padding: 10px;
+}
+
+#buy {
+    background-color: rgb(24, 214, 24);
+    color: white;
+    border: none;
+}
+
+#cart {
+    background-color: orange;
+    color: white;
+    border: none;
+}
+
+#buy:hover {
+    border: 1px solid black;
+}
+
+#cart:hover {
+    border: 1px solid black;
+}
+
+.card button:hover {
+    cursor: pointer;
+}
+
+
+.newsletter {
+    position: relative;
+    top: 1rem;
+}
+
+.newsletter input[type=text] {
+    width: 50vw;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.newsletter input[type=button] {
+    position: relative;
+    bottom: 1rem;
+    /* top: rem;
+     */
+    bottom: 3rem;
+    left: 25rem;
+    margin-left: 10px;
+    padding: 12px 30px;
+    font-size: 18px;
+}
+
+.newsletter input[type=button]:hover {
+    cursor: pointer;
+}
+
+.newsletter input[type=button]:active {
+    background: rgb(219, 214, 214);
+    color: black;
+    border: none;
+}
+
+.contact {
+    position: relative;
+    height: 120vh;
+    top: 206rem;
+}
+
+.contact h2 {
+    position: relative;
+    top: 5rem;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 6rem;
+    left: 5rem;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.contact form input {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.contact form input::placeholder {
+    font-size: 15px;
+}
+
+.contact form textarea {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.contact form textarea::placeholder {
+    font-size: 15px;
+}
+
+.contact form #submit {
+    padding: 10px;
+    width: 5rem;
+    font-size: 16px;
+}
+
+.contact form #submit:hover {
+    cursor: pointer;
+    background-color: rgb(199, 206, 212);
+    border: none;
+}
+
+.contact form #submit:active {
+    cursor: pointer;
+    background-color: rgb(16, 211, 16);
+    border: none;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    top: 198em;
+    height: 13rem;
+    color: white;
+    background-color: black;
+}
+
+footer section {
+    position: relative;
+    left: 4rem;
+    padding: 25px;
+}
+
+footer section h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+footer p {
+    margin-top: 15px;
+    width: 15rem;
+    font-family: 'Lato', sans-serif;
+}
+
+footer section ul li {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+section input[type=text] {
+    padding: 10px;
+    width: 25rem;
+}
+
+
+section input[type=text]::placeholder {
+    font-size: 16px;
+}
+
+footer section input[type=button] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+footer section input[type=button]:hover {
+    cursor: pointer;
+}
+
+footer section input[type=button]:active {
+    border: none;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    height: 4rem;
+    margin-top: 15px;
+}
+
+.copyright p {
+    width: 100vw;
+    text-align: center;
+}
+
+@media screen and (max-width:980px) {
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 18rem;
+        width: 100vw;
+        height: 20vh;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        height: 30vw;
+        align-items: center;
+        top: 7rem;
+        background-color: black;
+        gap: 2rem;
+        padding: 20px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    nav h2 {
+        position: relative;
+        top: 1rem;
+    }
+
+    nav ul li {
+        display: flex;
+        /* position: absolute; */
+        flex-direction: column;
+        height: 1vh;
+    }
+
+    nav button {
+        display: none;
+        background: white;
+        height: 4rem;
+    }
+
+    nav button#hamburger:hover {
+        color: black;
+        background-color: white;
+        height: 4rem;
+    }
+
+    nav span {
+        position: absolute;
+        top: 4rem;
+    }
+
+    #hamburger {
+        display: block;
+        position: absolute;
+        left: 2rem;
+    }
+
+    #hamburger:hover {
+        cursor: pointer;
+    }
+
+
+    .bg-circle {
+        transform: translateX(5rem);
+        height: 14rem;
+    }
+
+    .banner img {
+        transform: translateX(-13rem);
+        width: 28rem;
+    }
+
+    .product-demo section {
+        transform: translateX(105px);
+    }
+
+
+    .products h2 {
+        position: relative;
+        top: 3rem;
+        left: 4rem;
+    }
+
+    .products .card {
+        position: relative;
+        right: 4rem;
+        margin: 5px;
+    }
+
+    .core-features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customer {
+        top: 93rem;
+    }
+
+    #testimonials {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .newsletter {
+        transform: translateY(110rem);
+    }
+
+    .newsletter input[type=text] {
+        transform: translateX(-3rem);
+    }
+
+    .newsletter input[type=button] {
+        transform: translateX(-7rem);
+    }
+
+    .contact {
+        position: absolute;
+        top: 395rem;
+        left: 19rem;
+    }
+
+    .FAQ {
+        position: absolute;
+        transform: translateY(168rem);
+        width: 62rem;
+        height: 68rem;
+    }
+
+    .FAQ h2 {
+        position: relative;
+        top: 2rem;
+        left: 3rem;
+
+    }
+
+    footer {
+        display: flex;
+        position: relative;
+        height: 13rem;
+        color: white;
+        background-color: black;
+    }
+
+    #left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left h2 {
+        left: 3rem;
+    }
+
+    section#right {
+        position: relative;
+        bottom: 1rem;
+        left: 0rem;
+        margin: 4rem 0;
+    }
+
+    section#right p {
+        left: 3rem;
+    }
+
+    #first-left {
+        color: black;
+        position: relative;
+        top: 3rem;
+        left: 2rem;
+    }
+
+    #second-left {
+        color: black;
+        position: relative;
+        top: 2rem;
+        right: -2.5rem;
+    }
+
+    #third-left {
+        color: black;
+        position: relative;
+        top: 2rem;
+        right: -3rem;
+    }
+
+    footer {
+        transform: translateY(175rem);
+    }
+
+    footer section {
+        position: relative;
+        left: 2rem;
+        padding: 20px 5px;
+        margin: 0 5px;
+    }
+
+    section input[type=text] {
+        width: 15rem;
+    }
+}
